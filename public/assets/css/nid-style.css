@@ -1,0 +1,65 @@
+.mainDiv{
+    height:180px;
+    width:300px;
+    position: relative;
+    border: 5px solid wheat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+.mainDiv img{
+    height:180px;
+    width:300px;
+    line-height: 180px;
+}
+
+.my_file{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    outline: none;
+    color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 52px 120px;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.5s;
+    background: rgba(0,0, 0, 0.5);
+    opacity: 0;
+}
+
+.my_file::-webkit-file-upload-button{
+    visibility: hidden;
+}
+
+.my_file::before{
+content: '\f030';
+font-family: fontAwesome;
+font-size: 45px;
+color: #fff;
+display: inline-block;
+-webkit-user-select: none;
+}
+
+/* .my_file::after{
+    content: 'Update';
+    font-family: Arial;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    position: absolute;
+} */
+
+.my_file:hover{
+    opacity: 1;
+}
+
+#uploadNidDiv{
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
